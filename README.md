@@ -1,8 +1,7 @@
 # FilbertTool
 Touch the layout besides of EditText,hide the soft input. 触摸EditText之外的布局，自动隐藏输入法软键盘。
 
-![](https://github.com/KernHu/RahmenView/raw/master/screenshot/10010.gif)  
-![](https://github.com/KernHu/RahmenView/raw/master/screenshot/10011.gif)  
+![](https://github.com/KernHu/RahmenView/raw/master/screenshot/screen_shot.gif)  
 
 ##  I: How to use RahmenView.
 ### 1.Add the RahmenView to the layout.xml file where you want to display the list;
