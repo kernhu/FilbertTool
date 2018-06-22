@@ -7,7 +7,7 @@
 
 ![](https://github.com/KernHu/FilbertTool/raw/master/screenshot/screen_shot.gif)  
 
-##  I: How to use RahmenView.
+##  I: How to use FilbertTool.
 ### 1.Get the root view and past the root view into RecursInputMethod;
 
 
