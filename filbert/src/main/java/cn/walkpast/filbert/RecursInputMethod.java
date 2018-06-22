@@ -35,7 +35,7 @@ public class RecursInputMethod {
      *
      * @param view the root view in your layout
      */
-    public void setBaseView(View view) {
+    public void setRootView(View view) {
 
         if (view != null) {
             if (!(view instanceof EditText)) {
@@ -53,7 +53,7 @@ public class RecursInputMethod {
             if (view instanceof ViewGroup) {
                 for (int i = 0; i < ((ViewGroup) view).getChildCount(); i++) {
                     View inView = ((ViewGroup) view).getChildAt(i);
-                    setBaseView(inView);
+                    setRootView(inView);
                 }
             }
         }else{

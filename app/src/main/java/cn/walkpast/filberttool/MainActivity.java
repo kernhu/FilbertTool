@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mRootLayout = findViewById(R.id.root_layout);
-        RecursInputMethod.getInstance(this).setBaseView(mRootLayout);
-
+        RecursInputMethod.getInstance(this).setRootView(mRootLayout);
         mHelloWorld = findViewById(R.id.hello_world);
         mEditText = findViewById(R.id.edit_text);
         mRecyclerView = findViewById(R.id.recycler_view);
@@ -41,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
 //                InputMethodUtils.getInstance(MainActivity.this).showSoftInput(mEditText);
 //            }
 //        });
-
     }
 
 
