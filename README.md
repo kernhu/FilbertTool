@@ -36,4 +36,4 @@
 Email: sky580@126.com  
 I'm kern....
 
-If it helped you,please give me a star.如果有帮助到你，请给我一个小星星。
+If it helps you,please give me a star.如果有帮助到你，请给我一个小星星。
