@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
         mRootLayout = findViewById(R.id.root_layout);
         RecursInputMethod.getInstance(this).setBaseView(mRootLayout);
+
         mHelloWorld = findViewById(R.id.hello_world);
         mEditText = findViewById(R.id.edit_text);
-
         mRecyclerView = findViewById(R.id.recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(new MyAdapter(this));

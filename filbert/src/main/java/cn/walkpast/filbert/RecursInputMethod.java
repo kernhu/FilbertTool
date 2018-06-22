@@ -37,23 +37,27 @@ public class RecursInputMethod {
      */
     public void setBaseView(View view) {
 
-        if (!(view instanceof EditText)) {
-            if (view != null) {
-                view.setOnTouchListener(new View.OnTouchListener() {
-                    @Override
-                    public boolean onTouch(View view, MotionEvent motionEvent) {
-                        InputMethodUtils.getInstance(mActivity).hideSoftInput();
-                        return false;
-                    }
-                });
+        if (view != null) {
+            if (!(view instanceof EditText)) {
+                if (view != null) {
+                    view.setOnTouchListener(new View.OnTouchListener() {
+                        @Override
+                        public boolean onTouch(View view, MotionEvent motionEvent) {
+                            InputMethodUtils.getInstance(mActivity).hideSoftInput();
+                            return false;
+                        }
+                    });
+                }
             }
-        }
 
-        if (view instanceof ViewGroup) {
-            for (int i = 0; i < ((ViewGroup) view).getChildCount(); i++) {
-                View inView = ((ViewGroup) view).getChildAt(i);
-                setBaseView(inView);
+            if (view instanceof ViewGroup) {
+                for (int i = 0; i < ((ViewGroup) view).getChildCount(); i++) {
+                    View inView = ((ViewGroup) view).getChildAt(i);
+                    setBaseView(inView);
+                }
             }
+        }else{
+            throw new NullPointerException("root view is null");
         }
     }
 
