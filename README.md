@@ -1,7 +1,9 @@
 # FilbertTool
 
 	When use EditText and Soft Input,touch the layout besides of EditText,FilbertTool can easily hide the soft input. 
-	触摸EditText之外的布局，自动隐藏输入法软键盘。
+	当使用EditText和输入法软键盘时，触摸EditText之外的布局，自动隐藏输入法软键盘。
+	
+	代码量非常少，核心就是一个递归算法。
 
 ![](https://github.com/KernHu/FilbertTool/raw/master/screenshot/screen_shot.gif)  
 
