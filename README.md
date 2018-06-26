@@ -33,7 +33,11 @@
 	
 ## III: Contact me
 
-Email: sky580@126.com  
+Email: vsky580@gmail.com  
+Facebook: https://www.facebook.com/kern.hu.580
+
+QQ群：812492960
+
 I'm kern....
 
 If it helps you,please give me a star.如果有帮助到你，请给我一个小星星。
