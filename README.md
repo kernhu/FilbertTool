@@ -10,27 +10,27 @@
 ##  I: How to use FilbertTool.
 ### 1.Get the root view and past the root view into RecursInputMethod;
 
-
+```
  RecursInputMethod.getInstance(this).setRootView(findViewById(R.id.root_layout));
-
+```
 
 ## II: Add FilbertTool to your project
 
 ### Step 1. Add the JitPack repository to your build file; Add it in your root build.gradle at the end of repositories:
-
+```
 	allprojects {
         repositories {
         ...
         maven { url 'https://jitpack.io' }
         }
         }
-	
+```	
 ### Step 2. Add the dependency
-
+```
 	dependencies {
 	          implementation 'com.github.KernHu:FilbertTool:v1.1'
 	}
-	
+```
 ## III: Contact me
 
 Email: vsky580@gmail.com  
@@ -39,5 +39,6 @@ Facebook: https://www.facebook.com/kern.hu.580
 QQ群：812492960
 
 I'm kern....
-
+```
 If it helps you,please give me a star.如果有帮助到你，请给我一个小星星。
+```
