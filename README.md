@@ -28,7 +28,7 @@
 ### Step 2. Add the dependency
 ```
 	dependencies {
-	          implementation 'com.github.KernHu:FilbertTool:v1.1'
+	          implementation 'com.github.KernHu:FilbertTool:v1.2'
 	}
 ```
 ## III: Contact me
