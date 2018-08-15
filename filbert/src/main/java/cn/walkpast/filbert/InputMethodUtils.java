@@ -44,7 +44,7 @@ public class InputMethodUtils {
      */
     public void hideSoftInput() {
 
-        if (mInputMethodManager != null) {
+        if (mInputMethodManager != null && mActivity != null && mActivity.getCurrentFocus() != null) {
             mInputMethodManager.hideSoftInputFromWindow(mActivity.getCurrentFocus().getWindowToken(), 0);
         }
     }
