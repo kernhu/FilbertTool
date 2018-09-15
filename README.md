@@ -11,7 +11,7 @@
 ### 1.Get the root view and past the root view into RecursInputMethod;
 
 ```
- RecursInputMethod.getInstance(this).setRootView(findViewById(R.id.root_layout));
+new RecursInputMethod(this).setRootView(findViewById(R.id.root_layout));
 ```
 
 ## II: Add FilbertTool to your project
@@ -28,7 +28,7 @@
 ### Step 2. Add the dependency
 ```
 	dependencies {
-	          implementation 'com.github.KernHu:FilbertTool:v1.2'
+	          implementation 'com.github.KernHu:FilbertTool:v1.3'
 	}
 ```
 ## III: Contact me
