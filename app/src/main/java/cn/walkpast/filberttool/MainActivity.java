@@ -1,6 +1,7 @@
 package cn.walkpast.filberttool;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -34,12 +35,14 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setAdapter(new MyAdapter(this));
 
-//        mHelloWorld.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                InputMethodUtils.getInstance(MainActivity.this).showSoftInput(mEditText);
-//            }
-//        });
+        mHelloWorld.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              //  InputMethodUtils.getInstance(MainActivity.this).showSoftInput(mEditText);
+                Intent intent=new Intent(MainActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

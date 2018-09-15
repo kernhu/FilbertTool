@@ -1,6 +1,7 @@
 package cn.walkpast.filbert;
 
 import android.app.Activity;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,15 +31,13 @@ public class RecursInputMethod {
 
         if (view != null) {
             if (!(view instanceof EditText)) {
-                if (view != null) {
-                    view.setOnTouchListener(new View.OnTouchListener() {
-                        @Override
-                        public boolean onTouch(View view, MotionEvent motionEvent) {
-                            InputMethodUtils.getInstance(mActivity).hideSoftInput();
-                            return false;
-                        }
-                    });
-                }
+                view.setOnTouchListener(new View.OnTouchListener() {
+                    @Override
+                    public boolean onTouch(View view, MotionEvent motionEvent) {
+                        new InputMethodUtils(mActivity).hideSoftInput();
+                        return false;
+                    }
+                });
             }
 
             if (view instanceof ViewGroup) {
@@ -47,7 +46,8 @@ public class RecursInputMethod {
                     setRootView(inView);
                 }
             }
-        }else{
+        } else {
+            Log.e("sos", "root view is null");
             throw new NullPointerException("root view is null");
         }
     }

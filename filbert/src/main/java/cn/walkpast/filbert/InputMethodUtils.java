@@ -21,13 +21,6 @@ public class InputMethodUtils {
     private static WeakReference<InputMethodManager> mInputMethodManagerReference;
     private InputMethodManager mInputMethodManager;
 
-    public static InputMethodUtils getInstance(Activity activity) {
-
-        if (mInputMethodUtils == null) {
-            mInputMethodUtils = new InputMethodUtils(activity);
-        }
-        return mInputMethodUtils;
-    }
 
     public InputMethodUtils(Activity activity) {
         mActivity = activity;
