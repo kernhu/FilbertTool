@@ -15,15 +15,6 @@ import android.widget.EditText;
 public class RecursInputMethod {
 
     private Activity mActivity;
-    private static RecursInputMethod mRecursInputMethod;
-
-    public static RecursInputMethod getInstance(Activity activity) {
-        if (mRecursInputMethod == null) {
-            mRecursInputMethod = new RecursInputMethod(activity);
-        }
-        return mRecursInputMethod;
-    }
-
 
     public RecursInputMethod(Activity activity) {
         mActivity = activity;
