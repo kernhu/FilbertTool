@@ -11,24 +11,20 @@
 ### 1.Get the root view and past the root view into RecursInputMethod;
 
 ```
-new RecursInputMethod(this).setRootView(findViewById(R.id.root_layout));
+ RecursInputMethod
+                .getInstance()
+                .setActivity(this)
+                .setRootView(findViewById(R.id.root_layout))
+                .build();
+
 ```
 
 ## II: Add FilbertTool to your project
 
-### Step 1. Add the JitPack repository to your build file; Add it in your root build.gradle at the end of repositories:
-```
-	allprojects {
-        repositories {
-        ...
-        maven { url 'https://jitpack.io' }
-        }
-        }
-```	
-### Step 2. Add the dependency
+### Step 1. Add the dependency
 ```
 	dependencies {
-	          implementation 'com.github.KernHu:FilbertTool:v1.3'
+	         compile 'cn.walkpast.filbert:RecursInputMethod:1.0.2'
 	}
 ```
 ## III: Contact me
