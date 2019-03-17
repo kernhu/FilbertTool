@@ -28,7 +28,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mRootLayout = findViewById(R.id.root_layout);
-        new RecursInputMethod(this).setRootView(mRootLayout);
+        RecursInputMethod
+                .getInstance()
+                .setActivity(this)
+                .setRootView(mRootLayout)
+                .build();
+
         mHelloWorld = findViewById(R.id.hello_world);
         mEditText = findViewById(R.id.edit_text);
         mRecyclerView = findViewById(R.id.recycler_view);
@@ -38,8 +43,7 @@ public class MainActivity extends AppCompatActivity {
         mHelloWorld.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              //  InputMethodUtils.getInstance(MainActivity.this).showSoftInput(mEditText);
-                Intent intent=new Intent(MainActivity.this,MainActivity.class);
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

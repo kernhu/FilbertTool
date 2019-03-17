@@ -1,9 +1,8 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 27
-
-
 
     defaultConfig {
         minSdkVersion 15
@@ -22,6 +21,13 @@ android {
         }
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
+}
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
 }
 
 dependencies {
@@ -31,4 +37,14 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+publish {
+    repoName = 'aerie'
+    userOrg = 'sky580'
+    groupId = 'cn.walkpast.filbert'
+    artifactId = 'RecursInputMethod'
+    publishVersion = '1.0.2'
+    desc = 'RecursInputMethod'
+    website = 'https://github.com/KernHu'
 }
