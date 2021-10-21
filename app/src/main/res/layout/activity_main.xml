@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="cn.walkpast.filberttool.MainActivity">
+    tools:context="com.xcion.softinputtool.MainActivity">
 
     <TextView
         android:id="@+id/hello_world"

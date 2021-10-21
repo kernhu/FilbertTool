@@ -1,1 +1,1 @@
-include ':app', ':filbert'
+include ':app', ':softinput'

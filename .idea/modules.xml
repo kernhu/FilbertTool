@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FilbertTool.iml" filepath="$PROJECT_DIR$/FilbertTool.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/filbert/filbert.iml" filepath="$PROJECT_DIR$/filbert/filbert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FilbertTool.iml" filepath="$PROJECT_DIR$/.idea/modules/FilbertTool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FilbertTool.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FilbertTool.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/filbert/FilbertTool.softinput.iml" filepath="$PROJECT_DIR$/.idea/modules/filbert/FilbertTool.softinput.iml" />
     </modules>
   </component>
 </project>
